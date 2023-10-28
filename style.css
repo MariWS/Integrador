@@ -63,6 +63,8 @@ header .navbar {
 }
 
 
+
+
 h2,
 h3,
 h5 {
@@ -271,7 +273,7 @@ footer a {
         
             /*@mediaQuery*/
 
-@media (max-width: 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
 
 
             /*  nav bar*/
@@ -300,11 +302,6 @@ footer a {
             /* Inicio Carrusel */
 
 
-  .carrtop {
-
-    display: flexbox;
-
-  }
 
               /* Fin Carrusel */
 
@@ -319,8 +316,9 @@ footer a {
 
     padding: 15px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    align-content: space-around;
 
   }
 
