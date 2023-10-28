@@ -1,3 +1,5 @@
 0.0.2 se modificaron aspectos faltantes para web responsive @mediaQuery
 commit 718f2e1ce141bb104183a1739c647f19dfdb8442
 0.0.3 mismas modificaciones @mediaQuery max-width: 480px
+0.0.4 se especifico @media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+corrección responsive posicion de tarjetas
