@@ -18,7 +18,7 @@ body {
 
 
 
-                /* Inicio nav bar*/
+            /* Inicio nav bar*/
 
 
 #navbar {
@@ -39,11 +39,11 @@ header .navbar {
 }
 
 
-                /* fin nav bar*/
+            /* fin nav bar*/
 
 
 
-              /* Inicio Carrusel */
+            /* Inicio Carrusel */
 
 
 .carrtop {
@@ -56,8 +56,8 @@ header .navbar {
 
 .carousel-caption {
 
-   margin-bottom: 300px;
-   text-shadow: 1px 1px 2px #030303;
+  margin-bottom: 300px;
+  text-shadow: 1px 1px 2px #030303;
   -webkit-text-stroke: #000000;
 
 }
@@ -78,147 +78,151 @@ p {
 
 }
 
-                  /*Fin Carrusel*/
+            /*Fin Carrusel*/
 
 
 
 
-                  /*Inicio tarjetas*/
+            /*Inicio tarjetas*/
 
-#tarj
-    {
+#tarj {
 
-padding: 15px;
-display: flex;
-flex-direction: row; 
-justify-content: center;
-      
-}
-
-.card{
-margin:50px 20px;
-background-color: rgb(39, 38, 38);
-box-shadow:1px 1px 3px #525252;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
 }
 
-
-.card-title{
-
-color: rgb(245, 140, 3);
+.card {
+  margin: 50px 20px;
+  background-color: rgb(39, 38, 38);
+  box-shadow: 1px 1px 3px #525252;
 
 }
 
 
-                  /* fin tarjetas*/
+.card-title {
 
+  color: rgb(245, 140, 3);
 
-
-
-                /* Inicio imagenes*/
-                
-
-#imgcontcomp{
-
-display: flex;
-flex-direction: row; 
-justify-content: space-around;
-box-shadow:3px 2px 3px #525252;
 }
 
-#imagcomp{
+
+            /* fin tarjetas*/
+
+
+
+
+            /* Inicio imagenes*/
+
+
+#imgcontcomp {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 3px 2px 3px #525252;
+}
+
+#imagcomp {
 
   position: absolute;
 }
 
 
-#despenimag{
+#despenimag {
 
 
-position: absolute;
-width:auto;
-height: 500px;
-padding: 50px ;
-margin-left: 50px;
-text-align: center;
-
+  position: absolute;
+  width: auto;
+  height: 500px;
+  padding: 50px;
+  margin-left: 50px;
+  text-align: center;
+  text-shadow: 1px 1px 0.2px #030303;
 
 }
 
-/* Fin imagenes*/
+            /* Fin imagenes*/
 
 
 
-/* Inicio Formulario*/
+            /* Inicio Formulario*/
 
 
 
-#FmoRes{
-
-  width: 100%;
-  height: 800px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: center;
+#FmoRes {
+  
+  width: auto;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+ 
 }
 
-form{
 
-  box-shadow:4px 4px 5px 4px #525252;
+
+form {
+ 
+  box-shadow: 4px 4px 5px 4px #525252;
   margin: 20px;
   padding: 10px;
+  justify-content: space-between;
+}
+
+
+
+.nyap {
+
+ 
+  margin: 2PX;
+  padding: 2px;
 
 }
 
 
 
-.nyap{
+label {
 
-display: flex;
-margin: 5px;
-padding: 15px;
-flex-direction: row;
-justify-content: center;
+  padding: 20px;
+  margin: 5PX;
+
+  
 }
 
 
 
-label{
+.res {
 
-padding: 10px;
-
+  color: #030303;
+  text-align: center;
+  margin: 20px;
 }
 
 
 
-.res{
-
-color: #030303;
-
-}
-
-
-
-#areat{
+#areat {
 
   margin: 10px;
+  
 }
 
 
 
+/*calendario de reservas*/
 
+#reservas {
 
-#reservas{
-display: flex;
-width: auto;
-height: auto;
-margin: 30px;
-padding: 10px;
-justify-content: center;
-
-
+margin: 5px;
+padding: 5px;
+ 
 }
+
+/*fin caledario de reservas*/
+
 
 
 
@@ -227,55 +231,165 @@ justify-content: center;
 
 
 
-              /*Inicio footer*/
+
+            /*Inicio footer*/
 
 
 
-footer{
+footer {
   margin: 0px;
-   
-  }
+
+}
 
 
-footer a{
+footer a {
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
- 
-  
-#cop{
+
+
+#cop {
 
   text-decoration: none;
   color: white;
 }
 
-#desarr{
+#desarr {
 
   font-size: 11px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/*@mediaQuery*/
 
-   @media (max-width: 750px) {
-    
 
-    .card{
-  font-size: small;
+            /*Fin de Footer*/
+
+
+
+
+        
+            /*@mediaQuery*/
+
+@media (max-width: 750px) {
+
+
+            /*  nav bar*/
+
+
+  nav h2,
+  h3,
+  h5 {
+
+    font-size: 13px;
+  }
+
+  nav p {
+
+    font-size: 11px;
+
+  }
+
+
+            /* Fin nav bar*/
+
+
+
+
+
+            /* Inicio Carrusel */
+
+
+  .carrtop {
+
+    display: flexbox;
+
+  }
+
+              /* Fin Carrusel */
+
+
+
+
+
+              /*tarjetas*/
+
+
+  #tarj {
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+
+  .card {
+
+    font-size: small;
+  }
+
+
+
+              /* Fin tarjetas*/
+
+
+
+
+
+
+
+              /* Imágenes */
+
+  #imgcontcomp {
+
+    display: flexbox;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  #despenimag {
+
+
+    position: absolute;
+    width: auto;
+    height: auto;
+    padding: auto;
+    margin-left: auto;
+    text-align: center;
+
+  }
+
+               /* Fin Imágenes */
+
+
+               /* Inicio Formulario*/
+
+
+
+#FmoRes {
+  
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+ 
 }
 
 
-nav h2,h3,h5{
-  font-size: 13px;
+label {
+
+  padding: auto;
+  margin: auto;
+
+  
 }
 
-nav p{
-
-  font-size: 11px;
-
-}
-
 }
 
 
+
+            /* Fin Formulario*/
+
+/* ------------------------------------------- */
