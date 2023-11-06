@@ -148,7 +148,7 @@ console.log(PromoC)*/
             default:
                 
               console.log("Debe completar los campos");
-               alert("Para realizar su pedido debe completar el Formulario");
+               alert("Para realizar su pedido debe completar el Formulario 📝");
               
           }
 
