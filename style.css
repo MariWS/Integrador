@@ -3,6 +3,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
   width: auto;
+  box-sizing: border-box;
 }
 
 
@@ -161,11 +162,10 @@ p {
   margin-top: 10%;
   margin-bottom: 10%;
   margin-left: 20%;
-  margin-right: 20%;
- 
+  margin-right: 20%; 
+
+
 }
-
-
 
 form {
  
@@ -208,7 +208,7 @@ label {
 
 #areat {
 
-  margin: 10px;
+  margin: 20px 10px;
   
 }
 
@@ -239,16 +239,17 @@ padding: 5px;
 
 
 footer {
-  margin: 0px;
+  margin: auto;
 
-}
+
+  }
 
 
 footer a {
 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
-
 
 
 #cop {
@@ -259,12 +260,32 @@ footer a {
 
 #desarr {
 
-  font-size: 11px;
+  font-size: 13px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
+#redess{
 
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+  
+}
+
+
+ p.h5{
+
+  margin-top: 15px;
+  
+}            
+
+
+.imgreds{
+
+  padding: 5px;
+  
+}  
             /*Fin de Footer*/
 
 
@@ -273,25 +294,29 @@ footer a {
         
             /*@mediaQuery*/
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+@media  (max-width : 480px){
 
 
             /*  nav bar*/
 
+  header .navbar {
+  
+  background-color: #59020279 !important;        
+ 
+  }
 
   nav h2,
   h3,
   h5 {
 
-    font-size: 13px;
+    font-size: 15px;
   }
 
   nav p {
 
-    font-size: 11px;
+    font-size: 14px;
 
   }
-
 
             /* Fin nav bar*/
 
@@ -316,9 +341,8 @@ footer a {
 
     padding: 15px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-content: space-around;
+    align-self: stretch;
 
   }
 
@@ -326,25 +350,23 @@ footer a {
   .card {
 
     font-size: small;
+  
   }
 
 
 
               /* Fin tarjetas*/
 
-
-
-
-
-
+  
 
               /* Imágenes */
 
+             
   #imgcontcomp {
 
-    display: flexbox;
+    display: flex;
     flex-direction: column;
-    align-content: center;
+    align-self: stretch;
   }
 
   #despenimag {
@@ -353,9 +375,15 @@ footer a {
     position: absolute;
     width: auto;
     height: auto;
-    padding: auto;
-    margin-left: auto;
+    margin: auto;
     text-align: center;
+
+  }
+
+  .imgtam{
+
+    height: auto;
+
 
   }
 
@@ -365,14 +393,35 @@ footer a {
                /* Inicio Formulario*/
 
 
-
-#FmoRes {
+  #FmoRes {
   
   width: auto;
   height: auto;
   margin-left: auto;
   margin-right: auto;
  
+}
+              /*form. calendario google*/
+
+
+/*
+  #resv{
+  
+  height: auto !important;
+  width: auto;
+  
+  }
+  
+  */
+  
+  
+  /*
+.nyap {
+
+ 
+  margin: auto;
+  padding: auto;
+
 }
 
 
@@ -384,10 +433,355 @@ label {
   
 }
 
-}
+/*
 
 
 
             /* Fin Formulario*/
 
-/* ------------------------------------------- */
+
+}  
+
+
+/*  @media750  */
+
+
+@media  (max-width : 750px){
+
+
+
+             /* Inicio Formulario*/
+
+
+.nyap{
+
+display: flex;
+flex-direction: column;
+              
+
+}
+
+
+  /*Fin Formulario*/
+
+}     
+             /*fin @mediaQuery*/
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+  /*---------------PROMOS*--------------/
+
+  
+              /***FORMULARIO***/
+
+#formP{
+  
+    margin: 10%;
+    padding: 10%;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  
+  }
+
+    /*TITULO FORM-IMAGEN*/
+
+
+#imgfrm{
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+      
+
+}
+
+
+#frm{
+
+  text-align: center;
+  text-shadow: 2px 3px 4px rgb(241, 132, 7);
+  padding-bottom: 50px;
+}
+
+
+#imgf{
+
+  border-radius: 10px;
+  box-shadow: 6px 10px 15px black ;
+
+}
+
+      /*Fin Titulo*/
+
+
+    /*DETALLE PARRILLADA*/
+
+
+#detalle{
+
+  margin-top: 50px;
+  box-shadow: 2px 3px 4px  #000000;
+   padding: 20px  
+
+}
+
+
+#lista{
+
+  padding: 5% 25%;
+
+}
+
+
+#titdetalle{
+
+  color: red;
+  text-shadow: 1px 1px 1px #000000;
+  text-decoration: rgb(167, 35, 35) 1px underline;
+}
+
+
+#precsindesc{
+
+  margin: 20px 40px ;
+  height: 90px;
+  text-decoration: rgb(243, 12, 12) line-through;
+  text-shadow: 2px 2px 3px rgb(240, 240, 240);
+  background-color: #000000;
+  border-radius: 50%;
+  text-align: center;
+
+
+}
+
+#prec{
+
+
+  font-size: 50px;
+
+}
+
+    /*FIN DETALLE PARRILLADA*/
+
+
+
+    /*INICIO TARJETAS*/
+
+
+#descc{
+
+  color: red;
+  text-shadow: 2px 1px 2px white;
+  font-size: 25px;
+}
+
+
+
+#porc{
+
+  font-size: 30px;
+  text-shadow: 2px 3px 4px rgb(252, 10, 10);
+ 
+}
+
+
+
+.pf{
+
+  color: rgb(138, 255, 127);
+  font-size: 30px;
+}
+
+
+
+#aclr{
+
+  font-size: 10px;
+
+}
+
+
+
+
+      /*FIN TARJETAS*/
+
+      
+      
+      
+      /*INICIO DATOS*/
+
+
+#datos{
+
+  padding: 10px;
+
+}
+
+
+
+      /*FIN DATOS*/
+
+
+
+
+
+    /*INICIO SELECCION DE PROMOCIONES*/
+ 
+
+
+#cantprom{
+display: flex;
+flex-direction: row;
+height: 50px;
+
+}
+
+
+
+
+ 
+  h4 {
+
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  label{
+
+    padding: 10px;
+
+  }
+
+
+  #Totaldisplay{
+
+    background-color: rgba(0, 195, 255, 0.356);
+
+  }
+
+  #botnsfn{
+
+    flex-direction: row;
+    
+  }
+
+
+      /*FIN SELECCION DE PROMOCIONES*/
+
+
+
+          /***FIN FORMULARIO***/
+
+
+
+
+          /***@MEDIAQUERY***/
+
+  /*@media 480px*/
+
+  @media  (max-width : 480px) {
+  
+
+    /*Detalle*/
+
+    #detalle{
+
+      margin-top: 20px;
+      padding: 10px  
+  
+    }
+  
+  
+    #lista{
+  
+      padding: 5% 10%;
+  
+    }
+
+
+    
+   /*Tarjetas*/ 
+
+  #cantprom{
+   
+    flex-direction: column;
+         
+    }
+
+    .card{
+      
+      flex-wrap: wrap;
+      margin: 5px;
+      padding: 5px;  
+    }
+  }
+
+
+  /*  FIN  @media 480px */
+
+
+
+
+  /*  INICIO  @media 750px */
+
+
+  @media  (max-width : 750px) {
+  
+    
+    /*Detalle*/
+
+    #detalle{
+
+      margin-top: 20px;
+      padding: 10px  
+  
+    }
+  
+  
+    #lista{
+  
+      padding: 5% 10%;
+  
+    }
+
+
+   
+
+
+       /*Tarjetas*/
+
+
+      .card{
+        
+        flex-wrap: wrap;
+        margin: 5px;
+        padding: 5px;  
+      }
+
+      
+
+
+      /*seleccion cantidad*/
+
+
+    #cantprom{
+     
+      flex-direction: column;
+           
+      }
+
+
+    }
+
+    /*  FIN  @media 750px */
+
+
+
+        /***FIN @MEDIAQUERY***/
+
+
+
+/**************/      /****************/     /**************/
